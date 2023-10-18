@@ -1,0 +1,23 @@
+footer {
+  text-align: center;
+  padding: 6px;
+  background: linear-gradient(to right, #7E5516, #B08024, #7E5516);
+  color: #fff;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* added by FK, both of footer.css & footer.scss */
+.footer_nav li {
+	display: inline;
+	font-size: x-small;
+}
+
+.footer_nav li+ li {
+  border-left: 1px solid #666;
+  padding-left: 5px;
+}

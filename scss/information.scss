@@ -1,0 +1,461 @@
+$Fonts : #B08024;
+
+body {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto !important;
+}
+
+.inner {
+  background-image: url(../img/site-bg.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+
+.wrap {
+  text-align: center;
+  font-family: 'A-OTF Ryumin Pro';
+  padding-top: 80px;
+  &-ttl {
+    color: $Fonts;
+    font-size: 2rem;
+  }
+}
+
+header {
+  background-color: #fff;
+  max-width: 700px;
+}
+
+.header {
+  width: 100%;
+  height: 85px;
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px ;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+    p {
+      font-size: 2.4rem;
+      font-weight: bold;
+      font-family: 'Arial';
+      padding-left: 15px;
+      @media screen and(max-width: 440px) {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  &__main-img-sp {
+    // background-image: url(../img/info-main.jpg);
+    // background-position: center;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+    @media screen and(max-width: 425px) {
+      max-width: 425px;
+      height: 400px;
+    }
+  }
+}
+
+.info {
+  &__container {
+    .btn {
+      width: 100%;
+      max-width: 980px;
+      padding: 16px 32px;
+      text-align: right;
+      a {
+        padding-right: 10px;
+        color: #000;
+      }
+      &__text {
+        color: #000;
+        font-size: 18px;
+        // border-bottom: 1px solid #fff;
+        position: relative;
+        display: inline-block;
+        &::after {
+          content: '';
+          position: absolute;
+          left: 40%;
+          bottom: 0px;/*線の上下位置*/
+          display: inline-block;
+          width: 115px;/*線の長さ*/
+          height: 1px;/*線の太さ*/
+          -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);/*位置調整*/
+          background-color: #000;/*線の色*/
+          border-radius: 2px;/*線の丸み*/
+      }
+    }
+      .triangle-line {
+        position: relative;
+        // border-top: 2px solid #fff;
+        box-sizing: border-box;
+      }
+      .triangle-line::after{
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        right: -25px;
+        border-left: 16px solid #000;
+        border-top: 7px solid transparent;
+      }
+    }
+    &-box {
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      &-content {
+        padding: 15px;
+
+        &-ttl {
+          font-size: 2rem;
+          font-weight: bold;
+          padding: 20px 0;
+          @media screen and(max-width: 425px) {
+            font-size: 1.6rem;
+          }
+        }
+        a {
+          img {
+            max-width: 610px;
+            max-height: 410px;
+            width: 100%;
+  
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.store {
+  margin: 0 auto;
+  max-width: 980px;
+  &__container {
+    margin-top: 30px;
+    img {
+      vertical-align: bottom;
+      width: 100%;
+    }
+    &-shop {
+      background-image: url(../img/shibuya-shop.jpg);
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 300px;
+      position: relative;
+      &-items {
+        position: absolute;
+        top: 105px;
+        right: 20px;
+        p, .center-line {
+          color: #fff;
+          font-family: 'A-OTF Ryumin Pro';
+        }
+        .center-line {
+          border-bottom: 1px solid #fff;
+          width: 220px;
+        }
+        p:first-child {
+          font-size: 4.5rem;
+          padding-left: 15px;
+        }
+        &-txts {
+          font-size: 1.8rem;
+          text-align: right;
+          padding-right: 10px;
+        }
+      }
+    }
+    .btn {
+      width: 100%;
+      max-width: 980px;
+      padding: 16px 32px;
+      border: $Fonts;
+      background: linear-gradient(to right, #7E5516, #B08024, #7E5516);
+      border-radius: 2px;
+      text-align: right;
+      a {
+        padding-right: 10px;
+        color: #fff;
+      }
+      &__text {
+        color: #fff;
+        font-size: 18px;
+        // border-bottom: 1px solid #fff;
+        position: relative;
+        display: inline-block;
+        &::after {
+          content: '';
+          position: absolute;
+          left: 40%;
+          bottom: 0px;/*線の上下位置*/
+          display: inline-block;
+          width: 145px;/*線の長さ*/
+          height: 1px;/*線の太さ*/
+          -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);/*位置調整*/
+          background-color: #fff;/*線の色*/
+          border-radius: 2px;/*線の丸み*/
+      }
+    }
+      .triangle-line {
+        position: relative;
+        // border-top: 2px solid #fff;
+        box-sizing: border-box;
+      }
+      .triangle-line::after{
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        right: -25px;
+        border-left: 16px solid #fff;
+        border-top: 7px solid transparent;
+      }
+    }
+  }
+}
+
+.count {
+  margin: 30px auto 0;
+  max-width: 569px;
+  background-color: #fff;
+    &__box {
+      display: flex;
+      justify-content: space-around;
+      border: 3px solid $Fonts;
+      width: 100%;
+      height: 178px;
+      padding: 30px 14px 20px;
+      &-counter {
+        display: flex;
+        text-align: center;
+        .sex {
+          font-size: 2rem;
+        }
+        &-item {
+          padding-left: 10px;
+          .underline {
+            border-bottom: 1px solid #4d4d4d;
+            width: 110px;
+            // display: block;
+            @media screen and(max-width: 375px) {
+              width: 100px;
+            }
+          }
+        }
+      }
+    .centerline {
+      border-left: 1px solid #4d4d4d;
+      height: 115px;
+      margin: -8px 12px 5px 15px;
+    }
+    .for-men .sex {
+      color: #0B0146;
+    }
+    .for-woman .sex {
+      color: #C2000B;
+    }
+    .person {
+      font-size: 40px;
+      color: #666666;
+    }
+  }
+}
+
+.series {
+  &__container {
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    @media screen and(max-width:375px) {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+    }
+    &-content {
+      width: 45%;
+      margin: 12px;
+      @media screen and(max-width: 425px) {
+        margin: 6px;
+      }
+      @media screen and(max-width: 375px) {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      &-boxes {
+        border: 1px solid #0B0146;
+        .okayama-shop {
+          background-image: url(../img/okayama-shop.jpg);
+          background-size: cover;
+          // transform:rotate(90deg);
+        }
+        .ayame-shop {
+          background-image: url(../img/ayame-shop.png);
+          background-size: contain;
+          // object-fit: cover;
+          background-color: #fff;
+        }
+        &-shop {
+          background-position: center;
+          background-repeat: no-repeat;
+          // min-width: 160px;
+          width: 100%;
+          height: 160px;
+          position: relative;
+          &-items {
+            position: absolute;
+            top: 55px;
+            left: 5%;
+            width: 100%;
+            @media screen and(min-width: 430px) {
+              top: 30%;
+              left: 20%;
+            }
+            .shop-ttl {
+              display: flex;
+              // justify-content: space-around;
+              align-items: flex-end;
+              width: 100%;
+              p:first-child {
+                font-size: 2.8rem;
+              }
+              p:last-child {
+                font-size: 1.3rem;
+                padding-right: 10px;
+                padding-left: 15%;
+              }
+            }
+            .center-line {
+              width: 155px;
+              border-bottom: 1px solid #fff;
+              @media screen and(min-width: 426px) {
+                max-width: 200px;
+                width: 80%;
+              }
+              @media screen and(max-width: 375px) {
+                width: 180px;
+              }
+            }
+            p, .center-line {
+              color: #fff;
+              font-family: 'A-OTF Ryumin Pro';
+            }
+            p:last-child {
+              padding-left: 10px;
+            }
+          }
+        }
+        .btn {
+          width: 100%;
+          max-width: 980px;
+          padding: 8px 12px;
+          border: $Fonts;
+          background: linear-gradient(to right, #7E5516, #B08024, #7E5516);
+          border-radius: 2px;
+          text-align: right;
+          &__text {
+            font-size: 1.6rem;
+          }
+          a {
+            color: #fff;
+          }
+        }
+      }
+
+      .person-counter {
+        margin-top: 30px;
+        background-color: #fff;
+        max-width: 568px;
+        &__box {
+          display: flex;
+          justify-content: space-around;
+          border: 3px solid $Fonts;
+          padding: 8px;
+          width: 100%;
+          @media screen and(max-width: 425px) {
+            padding: 10px 5px 5px;
+          }
+          @media screen and(max-width: 375px) {
+            padding: 10px 25px;
+          }
+          @media screen and(min-width: 426px) {
+            padding: 14px 8px 8px;
+          }
+          &-item {
+            display: flex;
+            text-align: center;
+            // width: 50%;
+            img {
+              max-width: 100%;
+              width: 20px;
+              height: 50px;
+              @media screen and(max-width: 375px) {
+                width: 25px;
+                height: 70px;
+              }
+            }
+          }
+          &-items {
+            padding-left: 8px;
+            @media screen and(max-width: 425px) {
+              padding-left: 5px;
+            }
+            .underline {
+              border-bottom: 1px solid #4d4d4d;
+              width: 100%;
+            }
+            .person {
+              font-size: 1.4rem;
+              color: #666666;
+              @media screen and(max-width: 375px) {
+                font-size: 30px;
+              }
+            }
+          }
+          .centerline {
+            border-left: 1px solid #4d4d4d;
+            height: 60px;
+            margin: 4px 12px 5px 15px;
+            @media screen and(max-width:425px) {
+              height: 45px;
+            }
+            @media screen and(min-width: 426px) {
+              height: 45px;
+            }
+            @media screen and(max-width: 375px) {
+              height: 63px;
+            }
+          }
+          .sex {
+            @media screen and(max-width: 425px) {
+              font-size: 10px;
+            }
+            @media screen and(max-width: 375px) {
+              font-size: 1.8rem;
+            }
+          }
+          .for-men .sex {
+            color: #0B0146;
+          }
+          .for-woman .sex {
+            color: #C2000B;
+          }
+        }
+      }
+    }
+  }
+}
